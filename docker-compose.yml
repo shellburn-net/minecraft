@@ -10,4 +10,5 @@ services:
     volumes:
       - "${DATA_DIR}:/data"
     restart: always
-
+    stdin_open: true  # equivalent to -i
+    tty: true         # equivalent to -t
