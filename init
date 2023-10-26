@@ -3,7 +3,7 @@
 MC_VERSION=minecraft_server.1.20.2.jar
 RAM=8G
 
-echo "***Starting MINECRFAT server ***"
+echo "*** Starting MINECRFAT server ***"
 
 # Copy server.properties file if not already exist
 [[ ! -f /data/server.properties ]] && cp -v /mc/server.properties /data/
