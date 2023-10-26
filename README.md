@@ -2,7 +2,7 @@
 Run your Minecraft Java server easily with Docker.
 
 ## Prerequisites
-Ensure you have Docker and the Docker Compose plugin installed. If you're on Ubuntu, you can follow this guide.
+Ensure you have Docker and the Docker Compose plugin installed. If you're on Ubuntu, you can follow this [guide](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-install-Docker-and-docker-compose-on-Ubuntu).
 
 ## Setting up the Server
 
