@@ -6,7 +6,13 @@ Ensure you have Docker and the Docker Compose plugin installed. If you're on Ubu
 
 ## Setting up the Server
 
-1. **Determine Server Data Location**
+1. **Download this repo**
+    ```
+    git clone https://github.com/shellburn-net/minecraft.git
+    cd minecraft
+    ```
+
+2. **Determine Server Data Location**
 
     Choose a permanent location for your Minecraft server files. For example: /home/foobar/minecraft.
 
@@ -24,7 +30,7 @@ DATA_DIR=/home/foobar/minecraft ./start
 ./start /home/foobar/minecraft
 ```
 
-3. **Configuration**
+4. **Configuration**
 
 Modify the default Minecraft version and adjust the JVM's RAM allocation in the `init` file.
 
