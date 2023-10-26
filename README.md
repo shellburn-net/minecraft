@@ -32,9 +32,7 @@ DATA_DIR=/home/foobar/minecraft ./start
 
 4. **Configuration**
 
-Modify the default Minecraft version and adjust the JVM's RAM allocation in the `init` file.
-
-Customize the default values of `server.properties` located in `mc/server.properties`.
+You can modify the default Minecraft version and adjust the JVM's RAM allocation in the `init` file.
 
 When a new Minecraft version is available, download and rename it to `minecraft_server.<version>.jar`, then move it into the `mc` directory.
 
