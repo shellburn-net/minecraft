@@ -14,12 +14,12 @@ Ensure you have Docker and the Docker Compose plugin installed. If you're on Ubu
 
     There are two ways to set the server directory:
 
-    a. Using an environment variable:
+- Using an environment variable:
 ```
 DATA_DIR=/home/foobar/minecraft ./start
 ```
 
-    b. Passing it as an argument: 
+- Passing it as an argument: 
 ```
 ./start /home/foobar/minecraft
 ```
