@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# check if DATA_DIR argument set
+if [[ ! -z $1 ]]; then
+    echo "DATA_DIR provided as argument [$1]; Setting it to env..."
+    export DATA_DIR=$1
+# check if DATA_DIR is set through env
+elif [[ ! -z $DATA_DIR ]]; then
+    echo "DATA_DIR provided as env [$DATA_DIR];"
+else
+    echo "Sorry, you need to set DATA_DIR variable where your minecraft data files will be / is located ... "
+    exit 1
+fi 
+
+# sanity check. Check if provided dir is actually a dir
+if [[ ! -d $DATA_DIR ]]; then
+    echo "Sorry, [$DATA_DIR] is not a directory :("
+    exit 1
+fi
+
+docker compose up -d --force-recreate --build
+

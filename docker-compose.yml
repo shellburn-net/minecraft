@@ -1,0 +1,13 @@
+version: '3'
+services:
+  minecraft:
+    container_name: "minecraft"
+    hostname: "minecraft"
+    image: minecraft
+    build: .
+    ports:
+      - "1337:1337"
+    volumes:
+      - "${DATA_DIR}:/data"
+    restart: always
+

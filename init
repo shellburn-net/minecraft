@@ -1,0 +1,18 @@
+#!/bin/bash
+
+MC_VERSION=minecraft_server.1.20.2.jar
+RAM=8G
+
+echo "***Starting MINECRFAT server ***"
+
+# Copy server.properties file if not already exist
+[[ ! -f /data/server.properties ]] && cp -v /mc/server.properties /data/
+
+# Copy eula.txt file if not already exist
+[[ ! -f /data/eula.txt ]] && cp -v /mc/eula.txt /data/
+
+# Copy all java server jars to data dir...
+cp -v /mc/minecraft_server* /data/
+
+exec java -Xmx${RAM} -Xms${RAM} -jar $MC_VERSION nogui
+
